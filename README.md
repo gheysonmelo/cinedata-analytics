@@ -9,6 +9,7 @@ suja e fragmentada.
 
 | Arquivo | Descrição |
 |---|---|
+| `00_Organizacao_do_Ambiente.ipynb` | Notebook de configuração compartilhada (catalog, schemas, landing path) — reaproveitado pelos demais via `%run`. |
 | `01_Landing_to_Bronze.ipynb` | Ingestão bruta dos 5 CSVs + cotação do dólar (API do Banco Central) em Delta, modo Append. |
 | `02_Bronze_to_Silver.ipynb` | Limpeza, tipagem, deduplicação e tradução das 7 tabelas Silver. |
 | `03_Silver_To_Gold.ipynb` | Star Schema (fato + dimensões + bridges) e tabela de contexto para o assistente de IA. |
